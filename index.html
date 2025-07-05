@@ -1,0 +1,675 @@
+<!--
+  Greetings!
+
+  This delightful template has been meticulously crafted and brought to life by Syed Mohsin. It is generously shared with the world, inviting you to unleash your creativity and tailor it to your heart's content.
+-->
+
+<!-- For any inquiries or collaborations reach out to me at drharshsaxena@gmail.com -->
+
+<!--
+  Embrace the guidance inscribed within the comments below to fashion an awe-inspiring portfolio of your own.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am Dr. Harsh Saxena, a Chest Physician specializing in Asthma, Allergy, T.B., Sleep & Bronchoscopy. Explore my clinical services, facilities, and contact me for appointments or consultations."
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Dr. Harsh Saxena's Medical Portfolio">
+    <meta itemprop="description" content="Welcome to my portfolio website. I am Dr. Harsh Saxena, a Chest Physician specializing in Asthma, Allergy, T.B., Sleep & Bronchoscopy. Explore my clinical services, facilities, and contact me for appointments or consultations.">
+
+    <!-- Reference screenshot of updated site's header in place of content -->
+    <meta itemprop="image" content="assets/images/dr-harsh-saxena.jpg">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://ossportfolio.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dr. Harsh Saxena's Medical Portfolio">
+    <meta property="og:description" content="Welcome to my portfolio website. I am Dr. Harsh Saxena, a Chest Physician specializing in Asthma, Allergy, T.B., Sleep & Bronchoscopy. Explore my clinical services, facilities, and contact me for appointments or consultations.">
+
+    <!-- Reference screenshot of updated site's header in content -->
+    <meta property="og:image" content="assets/images/dr-harsh-saxena.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dr. Harsh Saxena's Medical Portfolio">
+    <meta name="twitter:description" content="Welcome to my portfolio website. I am Dr. Harsh Saxena, a Chest Physician specializing in Asthma, Allergy, T.B., Sleep & Bronchoscopy. Explore my clinical services, facilities, and contact me for appointments or consultations.">
+
+    <!-- Reference screenshot of updated site's header in content -->
+    <meta name="twitter:image" content="assets/images/dr-harsh-saxena.jpg">
+
+    <!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Dr. Harsh Saxena's Medical Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">Menu</button>
+        </div>
+      </div>
+      <!-- <div class="menu-btn-container">
+        <div class="container">
+          <img src="assets/images/ambulance.jpg" alt="Logo" style="height:40px;">
+          <button type="button" class="menu-btn">menu</button>
+        </div>
+      </div> -->
+      
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Services</a></li>
+          <li class="nav-item"><a href="#aboutme">About Me</a></li>
+          <li class="nav-item"><a href="#testimonial">Testimonial</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+          <li class="nav-item"><a href="#map">Clinic</a></li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Dr. Harsh Saxena</span>
+            
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            MBBS, MD, FIP </br>
+            Chest Physician || Asthma, Allergy, T.B., Sleep || Bronchoscopy Specialist
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Book Appointment</a>
+            <a href="#work" class="btn btn-secondary">See My Services</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Affiliated With</h2>
+          <div class="logos">
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/stripe.svg"
+                alt="Max Hospital, New Delhi"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/datastax.svg"
+                alt="KGMC Lucknow"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coke.svg"
+                alt="Yashoda Hospital Hyderabad"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/gm.svg"
+                alt="Vedansh Chest & Allergy Clinic"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shares.svg"
+                alt="Pulmonary Rehabilitation"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shopify.svg"
+                alt="Sleep Medicine Center"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/agency-elevation.svg"
+                alt="Asthma Care Center"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/gitlab.svg"
+                alt="Allergy Clinic"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/duolingo.svg"
+                alt="Bronchoscopy Unit"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coyote.svg"
+                alt="Critical Care"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/astrato.svg"
+                alt="Tuberculosis Center"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/mercado.svg"
+                alt="Respiratory Medicine"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">My Services</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Pulmonary Function Test (PFT / Spirometry)</h3>
+                <p class="work-text">
+                  Comprehensive lung function evaluation for diagnosis and management of respiratory diseases.
+                </p>
+                <ol class="work-technologies">
+                  <li>Asthma</li>
+                  <li>COPD</li>
+                  <li>Respiratory Fitness</li>
+                  <li>Pre-operative Assessment</li>
+                </ol>
+                <!-- <div class="work-links">
+                  <a href="#" target="_blank" rel="noopener" class="link">Learn More</a>
+                  <a href="#" target="_blank" rel="noopener" title="Details">
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="Details"
+                      loading="lazy"
+                    />
+                  </a>
+                </div> -->
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/PFT.jpg"
+                  alt="Pulmonary Function Test"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Pleural Fluid Aspiration</h3>
+                <p class="work-text">
+                  Safe and expert removal of fluid from the pleural space for diagnosis and relief of symptoms.
+                </p>
+                <ol class="work-technologies">
+                  <li>Pleural Effusion</li>
+                  <li>TB Diagnosis</li>
+                  <li>Oncology Workup</li>
+                </ol>
+                <!-- <div class="work-links">
+                  <a href="#" target="_blank" rel="noopener" class="link">Learn More</a>
+                  <a href="#" target="_blank" rel="noopener" title="Details">
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="Details"
+                      loading="lazy"
+                    />
+                  </a>
+                </div> -->
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/Pleural Fluid Aspiration.webp"
+                  alt="Pleural Fluid Aspiration"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Bronchoscopy</h3>
+                <p class="work-text">
+                  Advanced diagnostic and therapeutic bronchoscopy for airway and lung disorders.
+                </p>
+                <ol class="work-technologies">
+                  <li>Diagnosis</li>
+                  <li>Foreign Body Removal</li>
+                  <li>Biopsy</li>
+                </ol>
+                <!-- <div class="work-links">
+                  <a href="#" target="_blank" rel="noopener" class="link">Learn More</a>
+                  <a href="#" target="_blank" rel="noopener" title="Details">
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="Details"
+                      loading="lazy"
+                    />
+                  </a>
+                </div> -->
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/Bronchoscopy.png"
+                  alt="Bronchoscopy"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="aboutme">About me</h2>
+          <div class="article-boxes">
+            <article class="article-box featured-article">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h3">
+                    Dr. Harsh Saxena
+                  </h3>
+                  <p class="article-text">
+                      MBBS, MD (Pulmonary Medicine), FIP (Reg. No.: 75443)<br>
+                      Fellowship in Intervention Pulmonology (Yashoda Hospital, Hyderabad)<br>
+                      Ex. Consultant, Max Hospital, New Delhi<br>
+                      Ex. Senior Resident, KGMC Lucknow<br>
+                      5+ years of clinical experience in Respiratory Medicine, Critical Care & Sleep Medicine.<br>
+                      Dedicated to excellence in respiratory medicine, allergy, sleep disorders, and interventional pulmonology.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener">Continue reading</a>
+                  <!-- <span class="reaction-count">
+                    <img src="./assets/images/heart-outline.svg" alt="heart" />
+                    416
+                  </span> -->
+                </div>
+              </div>
+              <picture class="article-illustration">
+                <img
+                  src="assets/images/Harsh.png"
+                  alt="ICD Chest Tube"
+                  loading="lazy"
+                />
+              </picture>
+            </article>
+            <!-- <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Polysomnography (Sleep Study)</h3>
+                  <p class="article-text">
+                    State-of-the-art sleep study for diagnosis and management of sleep disorders including sleep apnea.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener">Continue reading</a>
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    47
+                  </span>
+                </div>
+              </div>
+            </article> -->
+            <!-- <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">
+                    Pulmonary Rehabilitation
+                  </h3>
+                  <p class="article-text">
+                    Comprehensive rehabilitation programs for chronic lung diseases to improve quality of life.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener">Continue reading</a>
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    177
+                  </span>
+                </div>
+              </div>
+            </article> -->
+            <!-- <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Asthma & Allergy Clinic</h3>
+                  <div class="article-text">
+                    Specialized care and testing for asthma, allergies, and related respiratory conditions.
+                  </div>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener">Continue reading</a>
+                  <span class="reaction-count">
+                    <img
+                      loading="lazy"
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                    />
+                    350
+                  </span>
+                </div>
+              </div>
+            </article> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">Expertise</h2>
+          <div class="skills-imgs">
+                <img src="assets/images/skills/react.webp" alt="Asthma" class="skills-img" loading="lazy" title="Asthma">
+                <img src="assets/images/skills/svelte.webp" alt="Allergy" class="skills-img" loading="lazy" title="Allergy">
+                <img src="assets/images/skills/typescript.webp" alt="Sleep Disorders" class="skills-img" loading="lazy" title="Sleep Disorders">
+                <img src="assets/images/skills/a11y.webp" alt="Bronchoscopy" class="skills-img" loading="lazy" title="Bronchoscopy">
+                <img src="assets/images/skills/shell.webp" alt="Pulmonary Rehab" class="skills-img" loading="lazy" title="Pulmonary Rehab">
+                <img src="assets/images/skills/next-js.webp" alt="Tuberculosis" class="skills-img" loading="lazy" title="Tuberculosis">
+                <img src="assets/images/skills/graphql.webp" alt="Critical Care" class="skills-img" loading="lazy" title="Critical Care">
+                <img src="assets/images/skills/git.webp" alt="Patient Education" class="skills-img" loading="lazy" title="Patient Education">
+                <img src="assets/images/skills/html.webp" alt="Respiratory Medicine" class="skills-img" loading="lazy" title="Respiratory Medicine">
+                <img src="assets/images/skills/js.webp" alt="Health Informatics" class="skills-img" loading="lazy" title="Health Informatics">
+          </div>
+        </div>
+      </section> -->
+
+      <section>
+        <h2 class="h2" id="testimonial">Testimonials</h2>
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Dr. Harsh Saxena provided expert care for my pneumonia. His guidance and treatment helped me recover fully.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/rich-harris.png"
+                  alt="Patient Testimonial"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Prakhar Katyayan</h3>
+                  <p class="testimonial-author-job">Patient</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                I was diagnosed with sleep apnea and Dr. Saxena's sleep clinic changed my life. Highly recommended.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/frank-mcsherry.webp"
+                  alt="Patient Testimonial"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">R. Gupta</h3>
+                  <p class="testimonial-author-job">Patient</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Very knowledgeable and compassionate doctor. My asthma is now well controlled thanks to Dr. Saxena.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/brian-hirsh.png"
+                  alt="Patient Testimonial"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">A. Singh</h3>
+                  <p class="testimonial-author-job">Patient</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Professional, approachable, and always available for his patients. Thank you, Dr. Saxena!
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/adam.png"
+                  alt="Patient Testimonial"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">M. Verma</h3>
+                  <p class="testimonial-author-job">Patient</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Best chest physician in Lucknow. Highly recommended for allergy and lung problems.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/val-head.png"
+                  alt="Patient Testimonial"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">S. Joshi</h3>
+                  <p class="testimonial-author-job">Patient</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Dr. Saxena's expertise in bronchoscopy and critical care is unmatched. Thank you for your support.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/tim-satterwhite.webp"
+                  alt="Patient Testimonial"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">K. Sharma</h3>
+                  <p class="testimonial-author-job">Patient</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Contact</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Accepting New Patients
+              </strong>
+              <p class="contact-text">
+                As a Chest Physician, I am dedicated to providing advanced care for respiratory conditions, allergies, and sleep disorders.  <br>
+                For appointments, consultations, or emergencies, please contact me using the details below or call <br>+91 7897910962
+              </p>
+              <img
+                src="assets/images/signatures.png"
+                alt="Dr. Harsh Saxena"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <section class="map-section">
+      <div class="container">
+        <h2 class="h2" id="map">Clinic Location</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <p class="contact-text">
+              Vedansh Chest & Allergy Clinic,<br>
+              House No.6, <br>
+              Himcity (Kanchanpur Matiyari),<br>
+              Chinhat, Lucknow (In Front of City Kart)
+            </p>
+          </div>
+          <div class="contact-form" style="padding:0;">
+            <iframe
+              src="https://www.google.com/maps?q=Vedansh%20Chest%20%26%20Allergy%20Clinic%2C%20House%20No.6%2C%20Himcity%20%28Kanchanpur%20Matiyari%29%2C%20Chinhat%2C%20Lucknow&output=embed"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border:0; border-radius: var(--gutter-nano); min-height:300px;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="Clinic Location" href="#" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/facebook-svgrepo-com.svg"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="LinkedIn" href="#" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/Instagram.svg"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="ResearchGate" href="#" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/LKN.svg"
+                    alt="LinkedIn" 
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            Portfolio for Dr. Harsh Saxena. <br>
+            &copy; <span id="year"></span>
+            <a href="https://imkatyayan.github.io/VedaX/" target="_blank" rel="noopener">VedaX</a> - All Rights Reserved.
+          </p>
+          <script>
+            // Set the current year dynamically
+            document.addEventListener("DOMContentLoaded", function() {
+              document.getElementById("year").textContent = new Date().getFullYear();
+            });
+          </script>
+          
+          
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
